@@ -13,8 +13,9 @@ interface IProps {
 /**
  * Perspective library adds load to HTMLElement prototype.
  * This interface acts as a wrapper for Typescript compiler.
+ * added HTMLElement in order for PerspectiveVie.. can behave like a regular HTML Element
  */
-interface PerspectiveViewerElement {
+interface PerspectiveViewerElement extends HTMLElement {
   load: (table: Table) => void,
 }
 
